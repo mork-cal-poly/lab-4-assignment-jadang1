@@ -133,3 +133,7 @@ arc(170,40,80,70,15,PI*1/3)
   ellipse(140,-200,15,15)
     pop();
 }
+
+function mouseClicked() {
+  clicked = !clicked;     
+}
