@@ -42,3 +42,47 @@ function drawBackground(x,y,colorOcean,colorSand){
  rect(-300,-160,900,700)
   pop();
 }
+
+function drawCat(x,y,colorFur,colorMouth,colorNose,colorEye){
+  push();
+    translate(x,y)
+    scale(0.75);
+      //left ear
+    fill(colorFur);
+    triangle(-50,-170,-90,-160,-100,-220)
+
+      //left ear
+    fill(colorFur)
+    triangle(-40,-170,0,-170,-10,-230)
+
+      //left leg
+    fill(colorFur)
+    rect(0,-100,40,80)
+
+      //right leg
+    fill(colorFur)
+    rect(90,-100,40,80)
+
+      //body
+    fill(colorFur)
+    rect(-25,-150,175,100)
+
+      //head
+    fill(colorFur)
+    ellipse(-40,-150,100,100)
+
+      //nose
+    fill(colorMouth)
+    ellipse(-40,-130,-40,-30)
+    fill(colorNose);
+    ellipse(-40, -130,-12,-7)
+
+      //right eye
+    fill(colorEye)
+    ellipse(-10,-150,15,15)
+
+      //left eye
+    fill(colorEye)
+    ellipse(-70,-150,15,15);
+  pop()
+}
