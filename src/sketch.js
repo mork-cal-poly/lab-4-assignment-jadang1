@@ -26,4 +26,7 @@ function draw() {
   //seal
   drawSeal(200,450+sealY,color('#FFFAF0'),color('#728FCE'),color('#696969'))
   
+  //cat
+  drawCat(100+catX,300,color('#C5C6D0'),color('#FBFCF8'),color('#F88379'),color('#728FCE')) 
+
 }
