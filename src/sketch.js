@@ -1,3 +1,7 @@
+let catX = 0; 
+let sealX = 0;
+let clicked = false;
+
 function setup() {
   // These lines are fitting our canvas
   // where we want in the DOM
