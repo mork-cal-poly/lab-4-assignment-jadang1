@@ -10,5 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  //background
+    drawBackground(0,0,color('#00BFFF'),color('#FFFACD'))
+
 }
