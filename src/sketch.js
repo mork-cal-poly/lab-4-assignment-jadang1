@@ -3,10 +3,10 @@ let sealX = 0;
 let clicked = false;
 
 function setup() {
-  createCanvas(400,400);
+  let myCanvas = createCanvas(400,400);
   fill('#00BFFF')
   ellipseMode(CENTER)
-
+  myCanvas.parent("canvas-parent")
 }
 
 function draw() {
