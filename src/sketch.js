@@ -22,4 +22,8 @@ function draw() {
   if (sealY <= -400) {
     catX = catX + 1
   }
+
+  //seal
+  drawSeal(200,450+sealY,color('#FFFAF0'),color('#728FCE'),color('#696969'))
+  
 }
