@@ -13,4 +13,9 @@ function draw() {
   //background
     drawBackground(0,0,color('#00BFFF'),color('#FFFACD'))
 
+    //animation for cat
+   if(clicked){ 
+    sealY = sealY - 1; 
+  }
+
 }
