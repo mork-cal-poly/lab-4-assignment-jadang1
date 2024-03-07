@@ -30,3 +30,15 @@ function draw() {
   drawCat(100+catX,300,color('#C5C6D0'),color('#FBFCF8'),color('#F88379'),color('#728FCE')) 
 
 }
+
+function drawBackground(x,y,colorOcean,colorSand){
+  push();
+//ocean
+      translate(200, 400);
+  fill(colorOcean)
+   rect(-300,-850,1800,900)
+//sand
+  fill(colorSand);
+ rect(-300,-160,900,700)
+  pop();
+}
