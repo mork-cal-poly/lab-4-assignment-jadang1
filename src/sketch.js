@@ -138,7 +138,29 @@ arc(170,40,80,70,15,PI*1/3)
     pop();
 }
 
-    
+//---------- Function for SUNFLOWER--- (Han Nguyen's code)--------------
+function drawFlower(x,y,rotateP){ //this for the flower around the sun
+  push()
+    translate(x,y)
+    rotate(rotateP)
+    scale(0.5)
+    fill('#FF774C')
+    noStroke()
+    ellipse(0, 0, 50,200)
+    fill(255)
+    noStroke()
+    ellipse(0,0, 50,150)
+  pop()
+}
+
+function drawSun(){      // the sun
+  push();
+    fill('#faee02')
+    noStroke()
+    ellipse(300, 70, 40, 40);
+  pop();
+}  
+//-----------------------------------------//
 function mouseClicked() {
   clicked = !clicked;     
 }
