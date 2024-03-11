@@ -16,9 +16,9 @@ function draw() {
   drawBackground(0,0,color('#00BFFF'),color('#FFFACD'))
 
 //sunflower
-    drawFlower(150,220,90+rotateP)
-    drawFlower(150,220,135+rotateP)
-    drawFlower(150,220,180+rotateP)
+    drawFlower(150,225,90+rotateP)
+    drawFlower(150,225,135+rotateP)
+    drawFlower(150,225,180+rotateP)
   
     drawSun()
 
@@ -166,7 +166,7 @@ function drawSun(){      // the sun
   push();
     fill('#faee02')
     noStroke()
-    ellipse(150, 220, 30, 30);
+    ellipse(150, 225, 30, 30);
   pop();
 }  
 //-----------------------------------------//
