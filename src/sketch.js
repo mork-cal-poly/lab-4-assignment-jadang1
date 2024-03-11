@@ -1,5 +1,6 @@
 let catX = 0;
 let sealY = 0;
+let rotateP = 0
 let clicked = false;
 
 function setup() {
@@ -13,7 +14,14 @@ function setup() {
 function draw() {
 //background
   drawBackground(0,0,color('#00BFFF'),color('#FFFACD'))
+
+//sunflower
+    drawFlower(150,225,90+rotateP)
+    drawFlower(150,225,135+rotateP)
+    drawFlower(150,225,180+rotateP)
   
+    drawSun()
+
 //animation for cat
    if(clicked){ 
     sealY = sealY - 1; 
@@ -23,7 +31,8 @@ function draw() {
   if (sealY <= -400) {
       catX = catX + 1
     }
-  
+
+
 //seal
   drawSeal(200,450+sealY,color('#FFFAF0'),color('#728FCE'),color('#696969'))
   
@@ -138,7 +147,29 @@ arc(170,40,80,70,15,PI*1/3)
     pop();
 }
 
-    
+//---------- Function for SUNFLOWER--- (Han Nguyen's code)--------------
+function drawFlower(x,y,rotateP){ //this for the flower around the sun
+  push()
+    translate(x,y)
+    rotate(rotateP)
+    scale(0.5)
+    fill('#FF774C')
+    noStroke()
+    ellipse(0, 0, 50,150)
+    fill(255)
+    noStroke()
+    ellipse(0,0, 50,100)
+  pop()
+}
+
+function drawSun(){      // the sun
+  push();
+    fill('#faee02')
+    noStroke()
+    ellipse(150, 225, 30, 30);
+  pop();
+}  
+//-----------------------------------------//
 function mouseClicked() {
   clicked = !clicked;     
 }
