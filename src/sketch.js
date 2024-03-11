@@ -23,7 +23,13 @@ function draw() {
   if (sealY <= -400) {
       catX = catX + 1
     }
+//sunflower
+    drawFlower(300,70,90+rotateP)
+    drawFlower(300,70,135+rotateP)
+    drawFlower(300,70,180+rotateP)
   
+    drawSun(300,70)
+
 //seal
   drawSeal(200,450+sealY,color('#FFFAF0'),color('#728FCE'),color('#696969'))
   
