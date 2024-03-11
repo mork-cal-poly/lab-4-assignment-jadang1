@@ -1,5 +1,6 @@
 let catX = 0;
 let sealY = 0;
+let rotateP = 0
 let clicked = false;
 
 function setup() {
@@ -13,7 +14,14 @@ function setup() {
 function draw() {
 //background
   drawBackground(0,0,color('#00BFFF'),color('#FFFACD'))
+
+//sunflower
+    drawFlower(200,70,90+rotateP)
+    drawFlower(200,70,135+rotateP)
+    drawFlower(200,70,180+rotateP)
   
+    drawSun(200,70)
+
 //animation for cat
    if(clicked){ 
     sealY = sealY - 1; 
@@ -23,12 +31,7 @@ function draw() {
   if (sealY <= -400) {
       catX = catX + 1
     }
-//sunflower
-    drawFlower(300,70,90+rotateP)
-    drawFlower(300,70,135+rotateP)
-    drawFlower(300,70,180+rotateP)
-  
-    drawSun(300,70)
+
 
 //seal
   drawSeal(200,450+sealY,color('#FFFAF0'),color('#728FCE'),color('#696969'))
