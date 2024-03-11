@@ -20,7 +20,7 @@ function draw() {
     drawFlower(200,70,135+rotateP)
     drawFlower(200,70,180+rotateP)
   
-    drawSun(200,70)
+    drawSun()
 
 //animation for cat
    if(clicked){ 
@@ -166,7 +166,7 @@ function drawSun(){      // the sun
   push();
     fill('#faee02')
     noStroke()
-    ellipse(300, 70, 40, 40);
+    ellipse(200, 70, 40, 40);
   pop();
 }  
 //-----------------------------------------//
